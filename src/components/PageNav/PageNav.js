@@ -6,7 +6,7 @@ function PageNav() {
   return (
     <nav className={classes.container}>
       <Link className={classes.logo} to="/">
-        <img src={planet} alt="logo planet" />
+        <img src={planet} alt="logo of space x" />
         Space Travelers&apos; Hub
       </Link>
       <ul className={classes.list}>
