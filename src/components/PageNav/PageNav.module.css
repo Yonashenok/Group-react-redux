@@ -1,0 +1,41 @@
+.container {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 5rem;
+  margin: 0 10rem;
+  border-bottom: 1px solid #777;
+}
+
+.logo {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 3.2rem;
+  color: #333;
+}
+
+.logo img {
+  width: 48px;
+  height: 48px;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.list li {
+  list-style: none;
+}
+
+.list a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #16a1b7;
+}
