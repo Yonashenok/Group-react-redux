@@ -14,8 +14,8 @@ function Mission() {
           </tr>
         </thead>
         <tbody>
-          {missions.length >= 0 &&
-            missions.map((mission) => (
+          {missions.length >= 0
+            && missions.map((mission) => (
               <tr key={mission.mission_id}>
                 <td>{mission.mission_name}</td>
                 <td>{mission.description}</td>
