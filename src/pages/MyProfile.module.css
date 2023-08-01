@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+}
+
+.containMission {
+  width: 20%;
+  height: 50vh;
+}
+
+.headText {
+  font-size: 3.2rem;
+  padding-left: 5rem;
+}
+
+.missions li {
+  width: 40rem;
+  height: 4rem;
+  padding: 1rem;
+  font-size: 1.8rem;
+  border-left: 1px solid #999;
+  border-right: 1px solid #999;
+  border-bottom: 1px solid #999;
+  list-style: none;
+}
+
+.missions li:first-child {
+  border-top: 1px solid #999;
+}
