@@ -21,7 +21,7 @@ function MyProfile() {
       <div className={classes.containMission}>
         <h2 className={classes.headText}>My Rockets</h2>
         <ul className={classes.missions}>
-          <li>Telstar</li>
+          <li className="item">Telstar</li>
           <li>Telstar</li>
           <li>Telstar</li>
           <li>Telstar</li>
