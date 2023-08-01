@@ -1,4 +1,77 @@
-* {
-  margin: 0;
-  padding: 0;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tableContainer {
+  margin: 3rem 12rem;
+  text-align: left;
+}
+
+table,
+th,
+td {
+  text-align: left;
+  border: 1px solid #999;
+  border-collapse: collapse;
+  padding: 1rem;
+}
+
+.theadContainer th {
+  font-size: 1.8rem;
+}
+
+.missionDetails:nth-of-type(odd) {
+  background-color: #eee;
+}
+
+.tableText {
+  font-size: 1.6rem;
+  line-height: 1.2;
+  letter-spacing: 0.6px;
+  width: 120rem;
+}
+
+.missionTitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  width: 15rem;
+}
+
+.memberBtn {
+  width: 15rem;
+  border: 1px solid #999;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: #777;
+}
+
+.activeMember {
+  width: 15rem;
+  border: 1px solid #44b4c5;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: #44b4c5;
+}
+
+.joinBtn {
+  width: 12rem;
+  padding: 1rem 0;
+  font-size: 1.6rem;
+  font-weight: 500;
+  border: 2px solid #999;
+  border-radius: 4px;
+  background-color: rgba(153, 153, 153, 0);
+}
+
+.leaveMission {
+  border: 1px solid red;
+  width: 12rem;
+  padding: 1rem 0;
+  font-size: 1.6rem;
+  border-radius: 2px;
+  color: red;
 }
