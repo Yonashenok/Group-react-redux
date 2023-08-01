@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchRocket } from '../../redux/rockets/rocketsSlice';
+import {
+  fetchRocket,
+  RocketReservation,
+} from '../../redux/rockets/rocketsSlice';
 import classes from './rockets.module.css';
 
 function RocketPage() {
@@ -19,7 +22,23 @@ function RocketPage() {
           </div>
           <div className={classes.rocketContent}>
             <h2>{rocket.name}</h2>
-            <p>{rocket.description}</p>
+            <p>
+              {rocket.rocketStatus ? (
+                <span className={classes.rocketReserved}>Reserved</span>
+              ) : null}
+              {rocket.description}
+            </p>
+            <button
+              className={
+                rocket.rocketStatus
+                  ? classes.buttonReserved
+                  : classes.buttonNotreserved
+              }
+              type="button"
+              onClick={() => dispatch(RocketReservation(rocket.id))}
+            >
+              {rocket.rocketStatus ? 'Cancel Reservation' : 'Reserve Rocket'}
+            </button>
           </div>
         </div>
       ))}
