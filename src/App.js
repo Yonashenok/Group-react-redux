@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { Routes, Route, Outlet } from 'react-router-dom';
 import { fetchMission } from './redux/missions/missionSlice';
+import { fetchRocket } from './redux/rockets/rocketsSlice';
 import PageNav from './components/PageNav/PageNav';
 import MyProfile from './pages/MyProfile';
 import Missions from './pages/Missions';
@@ -13,6 +14,9 @@ function Layout() {
 
   useEffect(() => {
     dispatch(fetchMission());
+  }, [dispatch]);
+  useEffect(() => {
+    dispatch(fetchRocket());
   }, [dispatch]);
   return (
     <>
