@@ -24,15 +24,17 @@ function Layout() {
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<h1>home</h1>} />
-        <Route path="missions" element={<Missions />} />
-        <Route path="rockets" element={<Rockets />} />
-        <Route path="myProfile" element={<MyProfile />} />
-        <Route path="*" element={<h2>No page found</h2>} />
-      </Route>
-    </Routes>
+    <>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<h1>home</h1>} />
+          <Route path="missions" element={<Missions />} />
+          <Route path="rockets" element={<Rockets />} />
+          <Route path="myProfile" element={<MyProfile />} />
+          <Route path="*" element={<h2>No page found</h2>} />
+        </Route>
+      </Routes>
+    </>
   );
 }
 
