@@ -1,9 +1,10 @@
+import RocketPage from '../components/RocketsPage/rockets';
+
 function Rockets() {
   return (
     <div>
-      <h1>Rockets</h1>
+      <RocketPage />
     </div>
   );
 }
-
 export default Rockets;
