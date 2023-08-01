@@ -12,7 +12,11 @@ export const fetchMission = createAsyncThunk(
   async () => {
     const res = await fetch('https://api.spacexdata.com/v3/missions');
     const data = await res.json();
-    return data;
+    const newData = data.map((mission) => ({
+      ...mission,
+      missionStatus: false,
+    }));
+    return newData;
   },
 );
 
@@ -20,8 +24,13 @@ const missionSlice = createSlice({
   name: 'missions',
   initialState,
   reducers: {
-    toggle(state) {
-      state.toggleStatus = !state.toggleStatus;
+    toggleMission(state, action) {
+      const id = action.payload;
+      const joinedMission = state.missions.find(
+        (mission) => mission.mission_id === id,
+      );
+
+      joinedMission.missionStatus = !joinedMission.missionStatus;
     },
   },
   extraReducers: (builder) => {
@@ -38,5 +47,5 @@ const missionSlice = createSlice({
   },
 });
 
-export const { toggle } = missionSlice.actions;
+export const { toggleMission } = missionSlice.actions;
 export default missionSlice.reducer;
