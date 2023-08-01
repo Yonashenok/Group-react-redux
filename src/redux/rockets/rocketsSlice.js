@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   rockets: [],
-  toggleStatus: false,
+  rocketStatus: false,
   status: 'idle',
   error: 'no',
 };
