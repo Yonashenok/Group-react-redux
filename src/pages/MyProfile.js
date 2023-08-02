@@ -3,9 +3,13 @@ import classes from './MyProfile.module.css';
 
 function MyProfile() {
   const { missions } = useSelector((state) => state.miss);
+  const { rockets } = useSelector((state) => state.rocket);
 
   const reservedMission = missions.filter(
     (mission) => mission.missionStatus === true,
+  );
+  const reservedRocketList = rockets.filter(
+    (reservedRocket) => reservedRocket.rocketStatus === true,
   );
 
   return (
@@ -21,10 +25,9 @@ function MyProfile() {
       <div className={classes.containMission}>
         <h2 className={classes.headText}>My Rockets</h2>
         <ul className={classes.missions}>
-          <li className="item">Telstar</li>
-          <li>Telstar</li>
-          <li>Telstar</li>
-          <li>Telstar</li>
+          {reservedRocketList.map((rocket) => (
+            <li key={rocket.id}>{rocket.name}</li>
+          ))}
         </ul>
       </div>
     </div>

@@ -1,18 +1,11 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import {
-  fetchRocket,
-  RocketReservation,
-} from '../../redux/rockets/rocketsSlice';
+import { RocketReservation } from '../../redux/rockets/rocketsSlice';
 import classes from './rockets.module.css';
 
 function RocketPage() {
   const { rockets } = useSelector((state) => state.rocket);
   const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(fetchRocket());
-  }, [dispatch]);
   return (
     <div className={classes.UiRocket}>
       {rockets.map((rocket) => (

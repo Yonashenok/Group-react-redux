@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   rockets: [],
-  rocketStatus: false,
+  toggleStatus: false,
   status: 'idle',
   error: 'no',
 };
@@ -23,11 +23,9 @@ const rocketSlice = createSlice({
   reducers: {
     RocketReservation(state, action) {
       const id = action.payload;
-      const updatedRockets = state.rockets.map((rocket) => (rocket.id === id
-        ? { ...rocket, rocketStatus: !rocket.rocketStatus }
-        : rocket));
+      const updatedRockets = state.rockets.find((rocket) => rocket.id === id);
 
-      state.rockets = updatedRockets;
+      updatedRockets.rocketStatus = !updatedRockets.rocketStatus;
     },
   },
   extraReducers: (builder) => {
