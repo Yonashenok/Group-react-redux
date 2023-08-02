@@ -14,8 +14,6 @@ function Layout() {
 
   useEffect(() => {
     dispatch(fetchMission());
-  }, [dispatch]);
-  useEffect(() => {
     dispatch(fetchRocket());
   }, [dispatch]);
   return (
@@ -31,9 +29,8 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<h1>home</h1>} />
+          <Route index element={<Rockets />} />
           <Route path="missions" element={<Missions />} />
-          <Route path="rockets" element={<Rockets />} />
           <Route path="myProfile" element={<MyProfile />} />
           <Route path="*" element={<h2>No page found</h2>} />
         </Route>
