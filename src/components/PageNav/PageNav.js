@@ -11,7 +11,7 @@ function PageNav() {
       </Link>
       <ul className={classes.list}>
         <li>
-          <NavLink to="/rockets">Rockets</NavLink>
+          <NavLink to="/">Rockets</NavLink>
         </li>
         <li>
           <NavLink to="/missions">Missions</NavLink>
