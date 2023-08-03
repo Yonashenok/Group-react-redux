@@ -46,6 +46,7 @@
   height: 3rem;
   width: 15rem;
   color: white;
+  border: none;
 }
 
 .buttonReserved:hover,
