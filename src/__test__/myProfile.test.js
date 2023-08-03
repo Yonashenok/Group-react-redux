@@ -11,7 +11,7 @@ describe('Test on MyProfile', () => {
     render(
       <Provider store={store}>
         <MyProfile />
-      </Provider>,
+      </Provider>
     );
 
     const missionsTitle = screen.queryByTestId('mission title');
@@ -40,7 +40,7 @@ describe('Test on MyProfile', () => {
     render(
       <Provider store={store}>
         <MyProfile />
-      </Provider>,
+      </Provider>
     );
 
     const joinedMission = screen.queryByText('Mission 1');
