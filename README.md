@@ -204,7 +204,7 @@ Feel free to check the [issues page](../../issues/).
 
 >
 
-If you like this project please contact us with [LinkedIn](https://www.linkedin.com/in/yonas-henok-996a26217)
+If you like this project please contact us with [Yonas Henok](https://www.linkedin.com/in/yonas-henok-996a26217) and [Melkamu Almawu](https://www.linkedin.com/in/melkamu-almawu/)
 
 <!-- ACKNOWLEDGEMENTS -->
 
