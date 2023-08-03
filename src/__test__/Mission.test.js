@@ -9,7 +9,7 @@ describe('Test Mission page', () => {
     const component = render(
       <Provider store={store}>
         <Mission />
-      </Provider>
+      </Provider>,
     );
 
     // Manipulate the component or find an element in it
@@ -47,7 +47,7 @@ describe('Test Mission page', () => {
         missionName={mockMissionData.mission_name}
         missionDescription={mockMissionData.description}
         missionStatus={mockMissionData.missionStatus}
-      />
+      />,
     );
 
     // Manipulate the component or find an element in it

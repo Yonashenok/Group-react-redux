@@ -6,10 +6,10 @@ function MyProfile() {
   const { rockets } = useSelector((state) => state.rocket);
 
   const reservedMission = missions.filter(
-    (mission) => mission.missionStatus === true
+    (mission) => mission.missionStatus === true,
   );
   const reservedRocketList = rockets.filter(
-    (reservedRocket) => reservedRocket.rocketStatus === true
+    (reservedRocket) => reservedRocket.rocketStatus === true,
   );
 
   return (
