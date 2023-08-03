@@ -15,7 +15,9 @@ function MyProfile() {
   return (
     <div className={classes.container}>
       <div className={classes.containMission}>
-        <h2 className={classes.headText}>My Missions</h2>
+        <h2 data-testid="mission title" className={classes.headText}>
+          My Missions
+        </h2>
         <ul className={classes.missions}>
           {reservedMission.map((mission) => (
             <li key={mission.mission_id}>{mission.mission_name}</li>
@@ -23,7 +25,9 @@ function MyProfile() {
         </ul>
       </div>
       <div className={classes.containMission}>
-        <h2 className={classes.headText}>My Rockets</h2>
+        <h2 data-testid="rocket title" className={classes.headText}>
+          My Rockets
+        </h2>
         <ul className={classes.missions}>
           {reservedRocketList.map((rocket) => (
             <li key={rocket.id}>{rocket.name}</li>
