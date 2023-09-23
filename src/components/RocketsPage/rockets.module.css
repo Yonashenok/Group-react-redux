@@ -1,0 +1,94 @@
+.UiRocket {
+  padding: 10px;
+  margin: 3rem 12rem;
+}
+
+.rocketList {
+  display: flex;
+  flex-direction: row;
+  row-gap: 20px;
+  padding: 10px 0;
+}
+
+.FlickerImage img {
+  width: 25rem;
+  height: 25rem;
+}
+
+.rocketContent {
+  order: 1;
+  gap: 10px;
+  padding: 0 20px;
+}
+
+.rocketContent p {
+  font-size: 17px;
+}
+
+.rocketReserved {
+  margin-right: 0.5rem;
+  color: #fff;
+  background-color: #17a2b8;
+  display: inline-block;
+  padding: 0.25em 0.4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+}
+
+.buttonNotreserved {
+  background-color: #268fff;
+  opacity: 1;
+  height: 3rem;
+  width: 15rem;
+  color: white;
+  border: none;
+}
+
+.buttonReserved:hover,
+.buttonReserved.focus {
+  background-color: #e2e4dd;
+  color: #212529;
+  text-decoration: none;
+  height: 4rem;
+  width: 15rem;
+}
+
+.buttonReserved:focus:not(:focus-visible) {
+  outline: 0;
+  height: 4rem;
+  width: 15rem;
+  background-color: white;
+  color: grey;
+}
+
+.buttonReserved:not(:disabled):not(.disabled) {
+  cursor: pointer;
+  height: 4rem;
+  width: 15rem;
+}
+
+.buttonNotreserved:focus,
+.buttonNotreserved.focus {
+  box-shadow: 0 0 0 0.2rem #268fff;
+  opacity: 1;
+}
+
+.buttonNotreserved:hover,
+.buttonNotreserved.focus {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.buttonNotreserved:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+.buttonNotreserved:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
